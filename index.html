@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<Myself>
+  <aboutMyself>
+    <FirstName>Nkwocha</FirstName>
+    <LastName>Uchenna</LastName>
+    <Age>21</Age>
+    <State>Lagos State</State>
+    <School>Aptech Computer Education</School>
+    <Address>No 2 Teslim Balogun</Address>
+    <StartedAt>18th August 2023</StartedAt>
+    <GraduatingAt>25th November 2025</GraduatingAt>
+    <Course>ADSE</Course>
+  </aboutMyself>
+</Myself> -->
+
+<p id="demo"></p>
+
+<script>
+    let text, parser, xmlDoc;
+
+    text = "<bookstore><book>" +
+    "<title>My best Show</title>" +
+    "<author>Uchenna</author>" +
+    "<year>2008</year>" +
+    "</book></bookstore>";
+
+    parser = new DOMParser();
+    xmlDoc = parser.parseFromString(text, "text/xml");
+
+    document.getElementById("demo").innerHTML = xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+    
+</script>
+
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
